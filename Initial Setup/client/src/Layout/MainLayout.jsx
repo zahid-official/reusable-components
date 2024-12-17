@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
-const Layout = () => {
+const MainLayout = () => {
   return (
     <div className="duration-500 dark:bg-slate-800  dark:text-white">
       <header>
@@ -20,4 +20,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default MainLayout;

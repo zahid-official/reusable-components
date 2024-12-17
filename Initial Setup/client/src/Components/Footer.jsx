@@ -33,7 +33,7 @@ const Footer = () => {
             </li>
             <li>
               <Link to={"https://www.instagram.com/"}>
-                <span className="hover:text-[#fd207f]">
+                <span className="hover:text-[#e0084b]">
                   <RiInstagramFill size={30} />
                 </span>
               </Link>
