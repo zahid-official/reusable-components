@@ -1,11 +1,11 @@
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
-import ContextAPI from "../Auth/Context/ContextAPI";
+import ContextHook from "../Auth/Hook/ContextHook";
 
 const Navbar = () => {
   // useContext
-  const { users, logout } = useContext(ContextAPI);
+  const { users, logout } = ContextHook();
 
   // handleSignOut
   const handleSignOut = () => {

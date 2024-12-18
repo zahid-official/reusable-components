@@ -1,15 +1,15 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { GoogleAuthProvider } from "firebase/auth";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
-import ContextAPI from "../../Auth/Context/ContextAPI";
 import Lottie from "lottie-react";
 import registerLottie from "../../Lottie/register.json";
+import ContextHook from "../../Auth/Hook/ContextHook";
 
 const Register = () => {
   // useContent
-  const { register, profile, setUsers, google } = useContext(ContextAPI);
+  const { register, profile, setUsers, google } = ContextHook();
   // state for password
   const [strongPassword, setStrongPassword] = useState("");
   // useLocation

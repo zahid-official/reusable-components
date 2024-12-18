@@ -1,15 +1,14 @@
-import { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import ContextAPI from "../../Auth/Context/ContextAPI";
 import { GoogleAuthProvider } from "firebase/auth";
 import loginLottie from "../../Lottie/login.json";
 import Lottie from "lottie-react";
+import ContextHook from "../../Auth/Hook/ContextHook";
 
 const Login = () => {
   // useContext
-  const { login, setUsers, google } = useContext(ContextAPI);
+  const { login, setUsers, google } = ContextHook();
   // useLocation
   const location = useLocation();
   // useNavigate
@@ -46,13 +45,13 @@ const Login = () => {
   };
   return (
     <>
-      <div className="flex lg:flex-row flex-col gap-10 w-11/12 mx-auto">
+      <div className="flex lg:flex-row flex-col-reverse gap-10 w-11/12 mx-auto">
         {/* login form */}
-        <div className="flex-1 flex justify-end">
-          <div className="card bg-[#f9f9f9] dark:bg-slate-700 w-full max-w-xl py-20 mb-28 mt-16 sm:px-12 px-6">
+        <div className="flex-1 flex lg:justify-end justify-center">
+          <div className="card bg-[#f9f9f9] dark:bg-slate-700 w-full max-w-lg py-14 mb-28 mt-16 sm:px-12 px-6">
             <form onSubmit={handleSubmit}>
               <h2 className={"sm:text-[40px] text-3xl font-semibold mb-8"}>
-                Sign In to your Account
+                Sign In to Account
               </h2>
 
               {/* input fields */}
