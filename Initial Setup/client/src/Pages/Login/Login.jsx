@@ -4,11 +4,11 @@ import { toast } from "react-toastify";
 import { GoogleAuthProvider } from "firebase/auth";
 import loginLottie from "../../Lottie/login.json";
 import Lottie from "lottie-react";
-import ContextHook from "../../Auth/Hook/ContextHook";
+import useAuth from "../../Auth/Hook/useAuth";
 
 const Login = () => {
   // useContext
-  const { login, setUsers, google } = ContextHook();
+  const { login, setUsers, google } = useAuth();
   // useLocation
   const location = useLocation();
   // useNavigate

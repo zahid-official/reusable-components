@@ -2,8 +2,8 @@ import { useContext } from "react";
 import ContextAPI from "../Context/ContextAPI";
 
 
-const ContextHook = () => {
+const useAuth = () => {
     const context = useContext(ContextAPI)
     return context
 };
-export default ContextHook;
+export default useAuth;

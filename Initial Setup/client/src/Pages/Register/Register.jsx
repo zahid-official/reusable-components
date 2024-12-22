@@ -5,11 +5,11 @@ import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 import Lottie from "lottie-react";
 import registerLottie from "../../Lottie/register.json";
-import ContextHook from "../../Auth/Hook/ContextHook";
+import useAuth from "../../Auth/Hook/useAuth";
 
 const Register = () => {
   // useContent
-  const { register, profile, setUsers, google } = ContextHook();
+  const { register, profile, setUsers, google } = useAuth();
   // state for password
   const [strongPassword, setStrongPassword] = useState("");
   // useLocation
