@@ -29,19 +29,19 @@ const Navbar = () => {
   const links = (
     <>
       <li className="text-lg font-bold">
-        <NavLink to={"/"} className={'dark:hover:bg-slate-600'}>Home</NavLink>
+        <NavLink to={"/"} className={'dark:hover:bg-slate-800'}>Home</NavLink>
       </li>
       <li className="text-lg font-bold">
-        <NavLink to={"/route2"} className={'dark:hover:bg-slate-600'}>Route2</NavLink>
+        <NavLink to={"/route2"} className={'dark:hover:bg-slate-800'}>Route2</NavLink>
       </li>
       <li className="text-lg font-bold">
-        <NavLink to={"/route3"} className={'dark:hover:bg-slate-600'}>Route3</NavLink>
+        <NavLink to={"/route3"} className={'dark:hover:bg-slate-800'}>Route3</NavLink>
       </li>
       <li className="text-lg font-bold">
-        <NavLink to={"/route4"} className={'dark:hover:bg-slate-600'}>Route4</NavLink>
+        <NavLink to={"/route4"} className={'dark:hover:bg-slate-800'}>Route4</NavLink>
       </li>
       <li className="text-lg font-bold">
-        <NavLink to={"/route5"} className={'dark:hover:bg-slate-600'}>Route5</NavLink>
+        <NavLink to={"/route5"} className={'dark:hover:bg-slate-800'}>Route5</NavLink>
       </li>
 
       {users?.email ? (
@@ -50,12 +50,12 @@ const Navbar = () => {
         <>
           <div className="divider divider-start sm:hidden m-0"></div>
           <li className="text-lg font-bold sm:hidden">
-            <NavLink to={"/login"} className={'dark:hover:bg-slate-600'}>
+            <NavLink to={"/login"} className={'dark:hover:bg-slate-800'}>
               <span>Sign In</span>
             </NavLink>
           </li>
           <li className="text-lg font-bold sm:hidden">
-            <NavLink to={"/register"} className={'dark:hover:bg-slate-600'}>
+            <NavLink to={"/register"} className={'dark:hover:bg-slate-800'}>
               <span>Sign Up</span>
             </NavLink>
           </li>
@@ -123,12 +123,12 @@ const Navbar = () => {
                 />
                 </div>
                 
-                <ul tabIndex={0} className="dropdown-content menu bg-base-100 dark:bg-slate-700 rounded-box z-30 w-44 px-2 py-5 border dark:border-none text-center text-base font-bold space-y-3 -right-14">
+                <ul tabIndex={0} className="dropdown-content menu bg-base-100 dark:bg-[#0a1020] rounded-box z-30 w-44 px-2 py-5 border dark:border-none text-center text-base font-bold space-y-3 -right-14">
                 <li className="px-3 border-b pb-4">{users?.displayName}</li>
                 <li className="px-3">
                   <button
                     onClick={handleSignOut}
-                    className="btn dark:bg-slate-800 dark:hover:bg-[#161f2c] dark:border-slate-800 dark:text-white text-lg font-bold min-w-28"
+                    className="btn dark:bg-[#010313] dark:hover:bg-[#161f2c] dark:border-slate-800 dark:text-white text-lg font-bold min-w-28"
                   >
                     Sign Out
                   </button>
@@ -139,13 +139,13 @@ const Navbar = () => {
           ) : (
             <div className="sm:flex gap-2.5 hidden">
               <Link to={"/login"}>
-                <button className="btn dark:bg-slate-700 dark:hover:bg-slate-600 dark:border-slate-700 dark:text-white text-lg font-bold min-w-28">
+                <button className="btn dark:bg-[#0a1020] dark:hover:bg-slate-800 dark:border-slate-700 dark:text-white text-lg font-bold min-w-28">
                   Sign In
                 </button>
               </Link>
 
               <Link to={"/register"}>
-                <button className="btn dark:bg-slate-700 dark:hover:bg-slate-600 dark:border-slate-700 dark:text-white text-lg font-bold min-w-28">
+                <button className="btn dark:bg-[#0a1020] dark:hover:bg-slate-800 dark:border-slate-700 dark:text-white text-lg font-bold min-w-28">
                   Sign Up
                 </button>
               </Link>
@@ -172,7 +172,7 @@ const Navbar = () => {
 
             <ul
               tabIndex={0}
-              className="z-20 dark:bg-slate-700 right-2 py-4 menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow gap-2"
+              className="z-20 dark:bg-[#0a1020] right-2 py-4 menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow gap-2"
             >
               {links}
             </ul>

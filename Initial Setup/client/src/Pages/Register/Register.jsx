@@ -80,7 +80,7 @@ const Register = () => {
         
         {/* registration form */}
         <div className="flex-1">
-          <div className="card bg-[#f9f9f9] dark:bg-slate-700 w-full max-w-xl xl:mx-0 mx-auto py-14 mt-10 mb-28 sm:px-12 px-6">
+          <div className="card bg-[#f9f9f9] dark:bg-[#0a1020] w-full max-w-xl xl:mx-0 mx-auto py-14 mt-10 mb-28 sm:px-12 px-6">
             <form onSubmit={handleSubmit}>
               <h2 className={"sm:text-[40px] text-3xl font-semibold mb-5"}>
                 Sign Up to Website
@@ -97,7 +97,7 @@ const Register = () => {
                     type="text"
                     name="name"
                     placeholder="name"
-                    className="input input-bordered dark:bg-slate-800"
+                    className="input input-bordered dark:bg-[#010313]"
                     required
                   />
                 </div>
@@ -113,7 +113,7 @@ const Register = () => {
                     type="text"
                     name="photo"
                     placeholder="photo url"
-                    className="input input-bordered dark:bg-slate-800"
+                    className="input input-bordered dark:bg-[#010313]"
                     required
                   />
                 </div>
@@ -127,7 +127,7 @@ const Register = () => {
                     type="email"
                     name="email"
                     placeholder="email"
-                    className="input input-bordered dark:bg-slate-800"
+                    className="input input-bordered dark:bg-[#010313]"
                     required
                   />
                 </div>
@@ -141,7 +141,7 @@ const Register = () => {
                     type="password"
                     name="password"
                     placeholder="password"
-                    className="input input-bordered dark:bg-slate-800"
+                    className="input input-bordered dark:bg-[#010313]"
                     required
                   />
 

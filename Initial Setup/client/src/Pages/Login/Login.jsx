@@ -48,7 +48,7 @@ const Login = () => {
       <div className="flex lg:flex-row flex-col-reverse gap-10 w-11/12 mx-auto">
         {/* login form */}
         <div className="flex-1 flex lg:justify-end justify-center">
-          <div className="card bg-[#f9f9f9] dark:bg-slate-700 w-full max-w-lg py-14 mb-28 mt-16 sm:px-12 px-6">
+          <div className="card bg-[#f9f9f9] dark:bg-[#0a1020] w-full max-w-lg py-14 mb-28 mt-16 sm:px-12 px-6">
             <form onSubmit={handleSubmit}>
               <h2 className={"sm:text-[40px] text-3xl font-semibold mb-8"}>
                 Sign In to Account
@@ -65,7 +65,7 @@ const Login = () => {
                     type="email"
                     name="email"
                     placeholder="email"
-                    className="input input-bordered dark:bg-slate-800"
+                    className="input input-bordered dark:bg-[#010313]"
                     required
                   />
                 </div>
@@ -79,7 +79,7 @@ const Login = () => {
                     type="password"
                     name="password"
                     placeholder="password"
-                    className="input input-bordered dark:bg-slate-800"
+                    className="input input-bordered dark:bg-[#010313]"
                     required
                   />
                   <label className="label">
