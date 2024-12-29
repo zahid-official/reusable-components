@@ -70,7 +70,7 @@ async function run() {
         .send({ login: true });
     });
 
-    // jwt token generate
+    // jwt token remove
     app.post("/jwtRemove", (req, res) => {
       res
         .clearCookie("token", {
@@ -80,6 +80,24 @@ async function run() {
         })
         .send({ logout: true });
     });
+
+
+    // verify token in private info route ( Demo )
+    app.get('/privateInfo/:email', verifyJWT, (req, res) => {
+      const email = req.params.email;
+
+      // verify token email
+      if(req.decodedToken.email !== email){
+        return res.status(403).send({message : 'Forbidden Access'});
+      }
+
+      res.send('Sent Database Data based on paramas email')
+    })
+
+
+
+
+
 
     // read Operation
     app.get("/", (req, res) => {

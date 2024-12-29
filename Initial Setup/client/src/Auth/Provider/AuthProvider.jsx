@@ -70,7 +70,7 @@ const AuthProvider = ({ children }) => {
       } 
       else {
         axios
-          .post("http://localhost:5000/jwt", { withCredentials: true })
+          .post("http://localhost:5000/jwtRemove", {}, { withCredentials: true })
           .then((res) => {
             console.log(res.data);
             setLoading(false);

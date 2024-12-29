@@ -41,7 +41,7 @@ const Navbar = () => {
         <NavLink to={"/route4"} className={'dark:hover:bg-slate-800'}>Route4</NavLink>
       </li>
       <li className="text-lg font-bold">
-        <NavLink to={"/route5"} className={'dark:hover:bg-slate-800'}>Route5</NavLink>
+        <NavLink to={"/privateInfo"} className={'dark:hover:bg-slate-800'}>Private Info</NavLink>
       </li>
 
       {users?.email ? (
