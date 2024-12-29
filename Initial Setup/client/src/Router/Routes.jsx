@@ -3,6 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import Error from "../Pages/Error/Error";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import PrivateRouter from "./PrivateRouter";
 
 const Routes = createBrowserRouter([
   {
@@ -16,27 +17,43 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/route2",
-        element: <h1>Route2 Page</h1>,
+        element: (
+          <PrivateRouter>
+            <h1>Route2 Page</h1>
+          </PrivateRouter>
+        ),
       },
       {
         path: "/route3",
-        element: <h1>Route3 Page</h1>,
+        element: (
+          <PrivateRouter>
+            <h1>Route3 Page</h1>
+          </PrivateRouter>
+        ),
       },
       {
         path: "/route4",
-        element: <h1>Route4 Page</h1>,
+        element: (
+          <PrivateRouter>
+            <h1>Route4 Page</h1>
+          </PrivateRouter>
+        ),
       },
       {
         path: "/route5",
-        element: <h1>Route5 Page</h1>,
+        element: (
+          <PrivateRouter>
+            <h1>Route5 Page</h1>
+          </PrivateRouter>
+        ),
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
       {
         path: "/register",
-        element: <Register></Register>
+        element: <Register></Register>,
       },
     ],
   },

@@ -157,7 +157,7 @@ const Register = () => {
 
                 {/* submit */}
                 <div className="form-control">
-                  <button className="btn mt-2 text-lg font-semibold dark:bg-slate-900 dark:hover:bg-slate-950 dark:text-white border-none">
+                  <button className="btn bg-[#010313] hover:bg-[#161f2c] text-white  mt-2 text-lg font-semibold dark:bg-slate-900 dark:hover:bg-slate-950 dark:text-white border-none">
                     <span className="z-10">Sign Up</span>
                   </button>
 

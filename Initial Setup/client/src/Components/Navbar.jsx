@@ -128,7 +128,7 @@ const Navbar = () => {
                 <li className="px-3">
                   <button
                     onClick={handleSignOut}
-                    className="btn dark:bg-[#010313] dark:hover:bg-[#161f2c] dark:border-slate-800 dark:text-white text-lg font-bold min-w-28"
+                    className="btn bg-[#010313] dark:bg-base-200 dark:text-black dark:hover:bg-base-300 hover:bg-[#161f2c] text-white text-lg font-bold min-w-28"
                   >
                     Sign Out
                   </button>
@@ -139,13 +139,13 @@ const Navbar = () => {
           ) : (
             <div className="sm:flex gap-2.5 hidden">
               <Link to={"/login"}>
-                <button className="btn dark:bg-[#0a1020] dark:hover:bg-slate-800 dark:border-slate-700 dark:text-white text-lg font-bold min-w-28">
+                <button className="btn bg-[#010313] dark:bg-base-200 dark:text-black dark:hover:bg-base-300 hover:bg-[#161f2c] text-white text-lg font-bold min-w-28">
                   Sign In
                 </button>
               </Link>
 
               <Link to={"/register"}>
-                <button className="btn dark:bg-[#0a1020] dark:hover:bg-slate-800 dark:border-slate-700 dark:text-white text-lg font-bold min-w-28">
+                <button className="btn bg-[#010313] dark:bg-base-200 dark:text-black dark:hover:bg-base-300 hover:bg-[#161f2c] text-white text-lg font-bold min-w-28">
                   Sign Up
                 </button>
               </Link>

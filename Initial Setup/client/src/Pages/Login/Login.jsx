@@ -91,7 +91,7 @@ const Login = () => {
 
                 {/* submit */}
                 <div className="form-control pt-2">
-                  <button className="btn dark:bg-slate-900 dark:hover:bg-slate-950 dark:text-white border-none mt-2 text-lg font-semibold">
+                  <button className="btn bg-[#010313] hover:bg-[#161f2c] text-white dark:bg-slate-900 dark:hover:bg-slate-950 dark:text-white border-none mt-2 text-lg font-semibold">
                     <span className="z-10">Sign In</span>
                   </button>
 
