@@ -3,6 +3,9 @@ import { FaDiscord, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
+  // currentYear for Copywrite
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <footer className="footer lg:justify-around py-20 text-base px-10 relative ">
@@ -13,7 +16,7 @@ const Footer = () => {
           <p>
             Logo Industries Ltd.
             <br />
-            Providing reliable tech since 2014
+            Providing reliable tech since 2015
           </p>
           <ul className="flex items-center gap-2 mt-2">
             <li>
@@ -74,7 +77,7 @@ const Footer = () => {
       </footer>
 
       <div className="py-7 px-5 text-lg font-semibold text-center border-t-2">
-        <p>© Logo is Proudly Owned by Zahidul Islam</p>
+        <p>Copyright © {currentYear} - Logo is Proudly Owned by Zahidul Islam</p> 
       </div>
     </>
   );
