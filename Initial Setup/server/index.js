@@ -10,7 +10,12 @@ const port = process.env.PORT || 5000;
 // middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173"], // set origin of production site
+    // set origin of production site
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "http://localhost:5175",
+    ],
     credentials: true,
   })
 );
@@ -81,23 +86,17 @@ async function run() {
         .send({ logout: true });
     });
 
-
     // verify token in private info route ( Demo )
-    app.get('/privateInfo/:email', verifyJWT, (req, res) => {
+    app.get("/privateInfo/:email", verifyJWT, (req, res) => {
       const email = req.params.email;
 
       // verify token email
-      if(req.decodedToken.email !== email){
-        return res.status(403).send({message : 'Forbidden Access'});
+      if (req.decodedToken.email !== email) {
+        return res.status(403).send({ message: "Forbidden Access" });
       }
 
-      res.send('Sent Database Data based on paramas email')
-    })
-
-
-
-
-
+      res.send("Sent Database Data based on paramas email");
+    });
 
     // read Operation
     app.get("/", (req, res) => {
